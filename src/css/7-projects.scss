@@ -65,6 +65,19 @@
           letter-spacing: 2px;
           transform: translateY(20px);
           transition: transform 0.4s ease 0.1s;
+          margin-bottom: 15px;
+        }
+
+        .click-hint {
+          font-size: 0.9rem;
+          color: #fff;
+          text-transform: none;
+          letter-spacing: 1px;
+          opacity: 0.8;
+          transform: translateY(20px);
+          transition: transform 0.4s ease 0.2s;
+          margin-top: 10px;
+          display: block;
         }
       }
     }
@@ -79,7 +92,8 @@
           opacity: 1;
 
           h3,
-          p {
+          p,
+          .click-hint {
             transform: translateY(0);
           }
         }
