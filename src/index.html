@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motto - Premium Production</title>
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="premium-theme">
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="promoVideo" width="100%" height="100%"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Trigger Button -->
+    <div id="modalTrigger" class="modal-trigger">
+        <span class="play-icon">▶</span>
+        <span>Fragmanı İzle</span>
+    </div>
+
+    <!-- Header -->
+    <header class="premium-header">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <a href="/" class="logo">
+                        MOTTO
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <nav class="desktop-menu d-none d-lg-block">
+                        <ul>
+                            <li><a href="#projects">Projeler</a></li>
+                            <li><a href="#players">Oyuncular</a></li>
+                            <li><a href="about.html">Hakkımızda</a></li>
+                            <li><a href="contact.html">İletişim</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-toggle d-lg-none">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-header-menu d-lg-none">
+            <div class="mobile-menu-inner">
+                <ul>
+                    <li><a href="#projects">Projeler</a></li>
+                    <li><a href="#players">Oyuncular</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+                <div class="mobile-menu-footer">
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-section">
+        <div class="swiper-container hero-slider">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="hero-bg">
+                        <div class="overlay"></div>
+                        <img src="img/1.jpg"
+                            alt="Sinematik Mükemmellik">
+                    </div>
+                    <div class="hero-content">
+                        <h1 class="fade-in-up">Sinematik Mükemmellik</h1>
+                        <p class="fade-in-up delay-1">Önemli hikayeler yaratıyoruz.</p>
+                        <a href="#projects" class="btn-premium fade-in-up delay-2">Çalışmaları Gör</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination hero-pagination"></div>
+            <!-- Navigation -->
+            <div class="swiper-button-next hero-next"></div>
+            <div class="swiper-button-prev hero-prev"></div>
+        </div>
+        <div class="scroll-down">
+            <span>Kaydır</span>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container-fluid">
+            <div class="section-header">
+                <h2>Öne Çıkan Projeler</h2>
+            </div>
+            <div class="row g-0 project-grid">
+                <!-- Project Item 1 -->
+                <div class="col-12 col-md-6 col-lg-4 project-item">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1000&auto=format&fit=crop"
+                            alt="Proje 1">
+                        <div class="project-info">
+                            <h3>Son Yolculuk</h3>
+                            <p>Belgesel</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 2 -->
+                <div class="col-12 col-md-6 col-lg-4 project-item">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e63?q=80&w=1000&auto=format&fit=crop"
+                            alt="Proje 2">
+                        <div class="project-info">
+                            <h3>Şehir Efsaneleri</h3>
+                            <p>Dizi</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 3 -->
+                <div class="col-12 col-md-6 col-lg-4 project-item">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=1000&auto=format&fit=crop"
+                            alt="Proje 3">
+                        <div class="project-info">
+                            <h3>Gece Güneşi</h3>
+                            <p>Sinema Filmi</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 4 -->
+                <div class="col-12 col-md-6 col-lg-4 project-item">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1533174072545-e8d4aa97edf9?q=80&w=1000&auto=format&fit=crop"
+                            alt="Proje 4">
+                        <div class="project-info">
+                            <h3>Sessiz Yankılar</h3>
+                            <p>Kısa Film</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 5 -->
+                <div class="col-12 col-md-6 col-lg-4 project-item">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1000&auto=format&fit=crop"
+                            alt="Proje 5">
+                        <div class="project-info">
+                            <h3>Doğanın Öfkesi</h3>
+                            <p>Belgesel</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Item 6 -->
+                <div class="col-12 col-md-6 col-lg-4 project-item">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1515634928627-2a4e0dae3ddf?q=80&w=1000&auto=format&fit=crop"
+                            alt="Proje 6">
+                        <div class="project-info">
+                            <h3>Şehir Işıkları</h3>
+                            <p>Reklam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Players Section -->
+    <section id="players" class="players-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Oyuncularımız</h2>
+                <p>Hikayelerin arkasındaki yüzlerle tanışın.</p>
+            </div>
+            <div class="swiper-container players-slider">
+                <div class="swiper-wrapper">
+                    <!-- Player 1 -->
+                    <div class="swiper-slide">
+                        <div class="player-card">
+                            <div class="player-img">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop"
+                                    alt="Oyuncu 1">
+                            </div>
+                            <div class="player-info">
+                                <h3>Sarah Johnson</h3>
+                                <p>Başrol Oyuncusu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Player 2 -->
+                    <div class="swiper-slide">
+                        <div class="player-card">
+                            <div class="player-img">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1000&auto=format&fit=crop"
+                                    alt="Oyuncu 2">
+                            </div>
+                            <div class="player-info">
+                                <h3>Michael Chen</h3>
+                                <p>Yönetmen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Player 3 -->
+                    <div class="swiper-slide">
+                        <div class="player-card">
+                            <div class="player-img">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
+                                    alt="Oyuncu 3">
+                            </div>
+                            <div class="player-info">
+                                <h3>David Smith</h3>
+                                <p>Yapımcı</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Player 4 -->
+                    <div class="swiper-slide">
+                        <div class="player-card">
+                            <div class="player-img">
+                                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1000&auto=format&fit=crop"
+                                    alt="Oyuncu 4">
+                            </div>
+                            <div class="player-info">
+                                <h3>Emily Davis</h3>
+                                <p>Senarist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination players-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 text-center">
+                    <h2>Hikaye Anlatıyoruz</h2>
+                    <p>Motto, görsel şaheserler yaratmaya adanmış premium bir yapım evidir. Sinema filmlerinden
+                        üst düzey reklamlara kadar, hikayeleri tutku ve hassasiyetle hayata geçiriyoruz.</p>
+                    <a href="#contact" class="btn-premium dark">İletişime Geç</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="premium-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="img/logo.svg" alt="Motto Logo" class="footer-logo">
+                    <p>&copy; 2023 Motto Productions.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4>İletişim</h4>
+                    <p>info@mottoproductions.com</p>
+                    <p>+90 212 000 00 00</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4>Bizi Takip Edin</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.min.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

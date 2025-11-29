@@ -1,0 +1,108 @@
+// Projects Section
+.projects-section {
+  padding: 100px 0;
+  background-color: #0a0a0a;
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+
+    h2 {
+      font-size: 3rem;
+      color: #fff;
+    }
+  }
+
+  .project-grid {
+    // Bootstrap grid handles layout
+  }
+
+  .project-item {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    cursor: pointer;
+
+    .project-card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .project-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        text-align: center;
+        padding: 20px;
+
+        h3 {
+          font-size: 2rem;
+          color: #fff;
+          transform: translateY(20px);
+          transition: transform 0.4s ease;
+        }
+
+        p {
+          font-size: 1rem;
+          color: #D4AF37;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          transform: translateY(20px);
+          transition: transform 0.4s ease 0.1s;
+        }
+      }
+    }
+
+    &:hover {
+      .project-card {
+        img {
+          transform: scale(1.1);
+        }
+
+        .project-info {
+          opacity: 1;
+
+          h3,
+          p {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+}
+
+// About Section
+.about-section {
+  padding: 120px 0;
+  background-color: #fff;
+  color: #000;
+
+  h2 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #555;
+  }
+}

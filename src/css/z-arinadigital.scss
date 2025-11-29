@@ -1,0 +1,33 @@
+.icindekiler{
+    padding: 18px 0;
+    h2{
+        color: #333;
+        margin-bottom: 15px;
+    }
+    li{
+        padding-top: 12px;
+        padding-left: 20px;
+        position: relative;
+        a{
+            cursor: pointer;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            color: #333;
+            display: block;
+            line-height: 18px;
+        }
+        &::before{
+            position: absolute;
+            content:'';
+            width: 6px;
+            height:6px;
+            border-radius:50%;
+            left:0;
+            top:12px;
+            bottom:0;
+            margin:auto 0;
+            background-color:#d70827;
+        }
+    }
+}
