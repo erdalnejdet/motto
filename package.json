@@ -4,7 +4,9 @@
   "description": "Eclit front",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp",
+    "build": "gulp build",
+    "start": "npx serve dist -l 3000"
   },
   "author": "Erkan Akar",
   "license": "ISC",
@@ -30,6 +32,7 @@
     "gulp-webp": "^4.0.1",
     "purify-css": "^1.2.5",
     "run-sequence": "^2.2.1",
-    "sass": "^1.94.2"
+    "sass": "^1.94.2",
+    "serve": "^14.2.1"
   }
 }
