@@ -2,11 +2,6 @@ const swiper3 = new Swiper(".car-slider", {
   slidesPerView: 1,
   spaceBetween: 0,
   loop: true,
-
-  pagination: {
-    el: ".before-slider-pagination",
-    clickable: true,
-  },
   breakpoints: {
     640: {
       slidesPerView: 1,
@@ -31,11 +26,6 @@ const swiper5 = new Swiper(".price-slider", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
-
-  pagination: {
-    el: ".price-slider-pagination",
-    clickable: true,
-  },
   breakpoints: {
     640: {
       slidesPerView: 1,
@@ -94,11 +84,6 @@ const comments = new Swiper(".comments-slider", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
-
-  pagination: {
-
-    clickable: true,
-  },
   breakpoints: {
     640: {
       slidesPerView: 1,
@@ -129,10 +114,6 @@ var swiper1 = new Swiper(".main-slider", {
   navigation: {
     nextEl: '.main-next',
 
-  },
-  pagination: {
-    el: ".main-slider-pagination",
-    clickable: true,
   },
   breakpoints: {
     640: {
@@ -198,10 +179,6 @@ const patiens = new Swiper(".patiens-slider", {
   autoplay: {
     delay: 4000, // Otomatik oynatma süresi (4 saniye)
   },
-  pagination: {
-    el: ".galery-slider-pagination",
-    clickable: true,
-  },
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -238,10 +215,6 @@ const heroSlider = new Swiper(".hero-slider", {
     delay: 5000,
     disableOnInteraction: false,
   },
-  pagination: {
-    el: ".hero-pagination",
-    clickable: true,
-  },
   navigation: {
     nextEl: ".hero-next",
     prevEl: ".hero-prev",
@@ -266,10 +239,6 @@ function initPlayersSlider(sliderElement) {
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
-    },
-    pagination: {
-      el: sliderElement.querySelector('.players-pagination'),
-      clickable: true,
     },
     breakpoints: {
       640: {
