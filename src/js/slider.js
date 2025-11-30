@@ -221,87 +221,31 @@ const heroSlider = new Swiper(".hero-slider", {
   },
 });
 
-// Players Tab Functionality
-let playersSliders = {};
-
-function initPlayersSlider(sliderElement) {
-  if (!sliderElement) return null;
-
-  const sliderId = sliderElement.getAttribute('data-slider');
-  if (playersSliders[sliderId]) {
-    return playersSliders[sliderId];
-  }
-
-  const swiper = new Swiper(sliderElement, {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
+// Players Slider
+const playersSlider = new Swiper('.players-slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
     },
-  });
-
-  playersSliders[sliderId] = swiper;
-  return swiper;
-}
-
-// Initialize all players sliders
-document.addEventListener('DOMContentLoaded', function() {
-  // Initialize the first active tab's slider
-  const activeTab = document.querySelector('.players-tab-content.active');
-  if (activeTab) {
-    const activeSlider = activeTab.querySelector('.players-slider');
-    if (activeSlider) {
-      initPlayersSlider(activeSlider);
-    }
-  }
-});
-
-// Tab switching functionality
-$(document).ready(function() {
-  $('.players-tab-menu li a').on('click', function(e) {
-    e.preventDefault();
-    
-    const tabId = $(this).attr('data-tab');
-    
-    // Remove active class from all tabs and contents
-    $('.players-tab-menu li').removeClass('active');
-    $('.players-tab-content').removeClass('active');
-    
-    // Add active class to clicked tab
-    $(this).parent('li').addClass('active');
-    
-    // Show corresponding content
-    $(`#${tabId}`).addClass('active');
-    
-    // Initialize or update slider for the active tab
-    const activeSlider = document.querySelector(`#${tabId} .players-slider`);
-    if (activeSlider) {
-      const sliderId = activeSlider.getAttribute('data-slider');
-      
-      if (!playersSliders[sliderId]) {
-        initPlayersSlider(activeSlider);
-      } else {
-        // Update slider if it already exists
-        setTimeout(function() {
-          playersSliders[sliderId].update();
-        }, 100);
-      }
-    }
-  });
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
 });

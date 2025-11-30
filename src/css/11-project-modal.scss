@@ -25,7 +25,8 @@
   }
 }
 
-.modal-info-grid {
+.modal-info-grid,
+.project-info-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -52,7 +53,8 @@
   }
 }
 
-.modal-story-section {
+.modal-story-section,
+.project-story-section {
   margin-top: 30px;
   padding-top: 30px;
   border-top: 1px solid #333;
@@ -72,6 +74,18 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+// Project Detail Page Styles
+.project-detail-content {
+  color: #fff;
+  background: #0a0a0a;
+  padding: 40px;
+  border-radius: 8px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
   }
 }
 

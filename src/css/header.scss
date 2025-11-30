@@ -30,10 +30,16 @@ $nav-link-hover: #d4af37; // Gold color for premium feel
         height: 70px;
 
         .logo {
-            color: #222222;
-            
+            img {
+                filter: brightness(0) invert(0);
+            }
+
             &:hover {
                 color: $nav-link-hover;
+
+                img {
+                    filter: brightness(0) invert(0) sepia(1) saturate(5) hue-rotate(30deg);
+                }
             }
         }
 
@@ -74,9 +80,18 @@ $nav-link-hover: #d4af37; // Gold color for premium feel
         letter-spacing: 2px;
         transition: all 0.3s ease;
 
+        img {
+            filter: brightness(0) invert(1);
+            transition: all 0.3s ease;
+        }
+
         &:hover {
             color: $nav-link-hover;
             transform: scale(1.05);
+
+            img {
+                filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(30deg);
+            }
         }
     }
 

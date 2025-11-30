@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motto - Premium Production</title>
-    <link rel="stylesheet" href="css/app.min.css?v=1.0.1">
+    <link rel="stylesheet" href="css/app.min.css?v=1.0.2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -31,7 +31,8 @@
     </div>
 
     <!-- Floating Trigger Button -->
-    <div id="modalTrigger" class="modal-trigger">
+    <div id="modalTrigger" class="modal-triggerÖne Çıkan Projeler
+    ">
         <span class="play-icon">▶</span>
         <span>Fragmanı İzle</span>
     </div>
@@ -42,14 +43,14 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto">
                     <a href="/" class="logo">
-                        MOTTO
+                        <img src="img/logo.svg" alt="Motto Logo">
                     </a>
                 </div>
                 <div class="col-auto">
                     <nav class="desktop-menu d-none d-lg-block">
                         <ul>
-                            <li><a href="#projects">Projeler</a></li>
-                            <li><a href="#players">Oyuncular</a></li>
+                            <li><a href="#projects">Diziler</a></li>
+                            <li><a href="#players">Dijital platform</a></li>
                             <li><a href="about.html">Hakkımızda</a></li>
                             <li><a href="contact.html">İletişim</a></li>
                         </ul>
@@ -66,16 +67,16 @@
         <div class="mobile-header-menu d-lg-none">
             <div class="mobile-menu-inner">
                 <ul>
-                    <li><a href="#projects">Projeler</a></li>
-                    <li><a href="#players">Oyuncular</a></li>
+                    <li><a href="#projects">Diziler</a></li>
+                    <li><a href="#players">Dijital platform</a></li>
                     <li><a href="about.html">Hakkımızda</a></li>
                     <li><a href="contact.html">İletişim</a></li>
                 </ul>
                 <div class="mobile-menu-footer">
                     <div class="social-links">
-                        <a href="#">Instagram</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">LinkedIn</a>
+                        <a href="https://x.com/mottoproduksyon" target="_blank">X</a>
+                        <a href="https://www.tiktok.com/@mottoprodksiyon" target="_blank">TikTok</a>
+                        <a href="https://www.facebook.com/mottoproduksiyon" target="_blank">Facebook</a>
                     </div>
                 </div>
             </div>
@@ -121,32 +122,44 @@
             <div class="section-header">
                 <h2>Öne Çıkan Projeler</h2>
             </div>
-            <div class="row g-0 project-grid">
-                <!-- Project Item 1 -->
-                <div class="col-12 col-md-6 col-lg-4 project-item">
-                    <div class="project-card" data-fancybox data-src="#project-detail">
-                        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1000&auto=format&fit=crop"
-                            alt="Kara Ağaç Destanı">
-                        <div class="project-info">
-                            <h3>Kara Ağaç Destanı</h3>
-                            <p>Drama</p>
-                            <span class="click-hint">Detay için tıklayınız</span>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="row  project-grid">
                 <!-- Project Item 2 -->
                 <div class="col-12 col-md-6 col-lg-4 project-item">
-                    <div class="project-card" data-fancybox data-src="#project-detail-2">
+                    <a href="project-detail-2.html" class="project-card">
                         <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1000&auto=format&fit=crop"
                             alt="Cennetin Çocukları">
-                        <div class="project-info">
-                            <h3>Cennetin Çocukları</h3>
-                            <p>Drama</p>
-                            <span class="click-hint">Detay için tıklayınız</span>
+                        <div class="project-overlay"></div>
+                        <div class="project-title">
+                            <h3>Cennetin</h3>
+                            <h3>Çocukları</h3>
                         </div>
-                    </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-genre">Drama</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+
+                <!-- Project Item 1 -->
+                <div class="col-12 col-md-6 col-lg-4 project-item">
+                    <a href="project-detail.html" class="project-card">
+                        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1000&auto=format&fit=crop"
+                            alt="Kara Ağaç Destanı">
+                        <div class="project-overlay"></div>
+                        <div class="project-title">
+                            <h3>Kara Ağaç</h3>
+                            <h3>Destanı</h3>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-genre">Drama</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
 
             </div>
         </div>
@@ -156,126 +169,72 @@
     <section id="players" class="players-section">
         <div class="container">
             <div class="section-header">
-                <h2>Dizi Karakterleri</h2>
-                <p>Hikayenin arkasındaki yüzlerle tanışın.</p>
+                <h2>Setten Kareler</h2>
+                <p>Çekimlerden özel anlar.</p>
             </div>
-            <div class="row players-tab-wrapper">
-                <div class="col-12 col-lg-3">
-                    <ul class="players-tab-menu">
-                        <li class="active"><a href="#kara-agac" data-tab="kara-agac">Kara Ağac</a></li>
-                        <li><a href="#cennetin-cocuklari" data-tab="cennetin-cocuklari">Cennetin Çocukları</a></li>
-                        <li><a href="#organizasyon" data-tab="organizasyon">Organizasyon Bizim İşimiz</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-lg-9">
-                    <!-- Tab Content 1: Kara Ağac -->
-                    <div id="kara-agac" class="players-tab-content active">
-                        <div class="swiper-container players-slider" data-slider="kara-agac">
-                            <div class="swiper-wrapper">
-                    
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/2.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/3.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/4.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/5.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/6.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/7.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/8.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/9.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/10.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/11.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/12.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/13.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/14.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/15.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/16.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/17.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/18.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/19.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/20.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/21.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/22.jpg" alt=""></div></div></div>
-                                <div class="swiper-slide"><div class="player-card"><div class="player-img"><img src="img/23.jpg" alt=""></div></div></div>
-                    
+            <div class="swiper-container players-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="player-card">
+                            <div class="player-img">
+                                <img src="img/se-1.jpeg" alt="Set Karesi 1">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="player-card">
+                            <div class="player-img">
+                                <img src="img/se-2.jpeg" alt="Set Karesi 2">
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Tab Content 2: Cennetin Çocukları -->
-                    <div id="cennetin-cocuklari" class="players-tab-content">
-                        <div class="swiper-container players-slider" data-slider="cennetin-cocuklari">
-                            <div class="swiper-wrapper">
-                                <!-- Character 1 -->
-                                <div class="swiper-slide">
-                                    <div class="player-card">
-                                        <div class="player-img">
-                                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
-                                                alt="Karakter 1">
-                                        </div>
-                                        <div class="player-info">
-                                            <h3>İskender</h3>
-                                            <p>Cennetin Çocukları</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Character 2 -->
-                                <div class="swiper-slide">
-                                    <div class="player-card">
-                                        <div class="player-img">
-                                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1000&auto=format&fit=crop"
-                                                alt="Karakter 2">
-                                        </div>
-                                        <div class="player-info">
-                                            <h3>Cennet Ana</h3>
-                                            <p>Cennetin Çocukları</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Character 3 -->
-                                <div class="swiper-slide">
-                                    <div class="player-card">
-                                        <div class="player-img">
-                                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop"
-                                                alt="Karakter 3">
-                                        </div>
-                                        <div class="player-info">
-                                            <h3>Karakter</h3>
-                                            <p>Cennetin Çocukları</p>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="swiper-slide">
+                        <div class="player-card">
+                            <div class="player-img">
+                                <img src="img/se-3.jpeg" alt="Set Karesi 3">
                             </div>
                         </div>
                     </div>
-                    <!-- Tab Content 3: Organizasyon Bizim İşimiz -->
-                    <div id="organizasyon" class="players-tab-content">
-                        <div class="swiper-container players-slider" data-slider="organizasyon">
-                            <div class="swiper-wrapper">
-                                <!-- Character 1 -->
-                                <div class="swiper-slide">
-                                    <div class="player-card">
-                                        <div class="player-img">
-                                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
-                                                alt="Karakter 1">
-                                        </div>
-                                        <div class="player-info">
-                                            <h3>Karakter</h3>
-                                            <p>Organizasyon Bizim İşimiz</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Character 2 -->
-                                <div class="swiper-slide">
-                                    <div class="player-card">
-                                        <div class="player-img">
-                                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1000&auto=format&fit=crop"
-                                                alt="Karakter 2">
-                                        </div>
-                                        <div class="player-info">
-                                            <h3>Karakter</h3>
-                                            <p>Organizasyon Bizim İşimiz</p>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="swiper-slide">
+                        <div class="player-card">
+                            <div class="player-img">
+                                <img src="img/se-4.jpeg" alt="Set Karesi 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="player-card">
+                            <div class="player-img">
+                                <img src="img/se-5.jpeg" alt="Set Karesi 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="player-card">
+                            <div class="player-img">
+                                <img src="img/se-6.jpeg" alt="Set Karesi 6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="player-card">
+                            <div class="player-img">
+                                <img src="img/se-7.jpeg" alt="Set Karesi 7">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="player-card">
+                            <div class="player-img">
+                                <img src="img/se-8.jpeg" alt="Set Karesi 8">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="player-card">
+                            <div class="player-img">
+                                <img src="img/se-9.jpeg" alt="Set Karesi 9">
                             </div>
                         </div>
                     </div>
@@ -284,74 +243,6 @@
         </div>
     </section>
 
-    <!-- Project Detail Modal (Hidden) -->
-    <div id="project-detail">
-        <h2>Kara Ağaç Destanı</h2>
-        
-        <div class="modal-info-grid">
-            <div>
-                <h3>Yapım</h3>
-                <p>Motto Prodüksiyon</p>
-            </div>
-
-            <div>
-                <h3>Senaryo</h3>
-                <p>Mustafa Becit, Selman Kılıçaslan</p>
-            </div>
-
-            <div>
-                <h3>Yönetmen</h3>
-                <p>Cem Akyoldaş</p>
-            </div>
-        </div>
-
-        <div class="modal-story-section">
-            <h3>Hikaye</h3>
-            <p>
-                Anadolu'nun sert topraklarında yeşeren Kara Ağaç kasabasında, geçmişle gelecek arasında sarsıcı bir aile hikâyesi başlar. Kasabanın en güçlü ismi olan Celal Ağa, yıllar boyunca kurduğu düzeni sürdürmeye kararlıdır. Ancak oğlu Ömer, babasının izinden gitmek yerine kendi doğrularının peşindedir. Bu çatışma, sadece baba-oğul arasında değil, tüm kasabada dengeleri alt üst eder. Kara Ağaç'ta herkesin bir sırrı, herkesin bir savaşı vardır. Kimi adalet için, kimi aşk için, kimi geçmişten kalan bir hesap için mücadele eder.
-            </p>
-            <p>
-                Güç, sadakat, intikam ve umut… Kara Ağaç Destanı'nda her karakterin bir yarası, her yaranın bir hikâyesi var.
-            </p>
-        </div>
-    </div>
-
-    <!-- Project Detail Modal 2 (Hidden) -->
-    <div id="project-detail-2">
-        <h2>Cennetin Çocukları</h2>
-        
-        <div class="modal-info-grid">
-            <div>
-                <h3>Yapım</h3>
-                <p>Motto Prodüksiyon</p>
-            </div>
-
-            <div>
-                <h3>Senaryo</h3>
-                <p>Motto Yazım Grubu</p>
-            </div>
-
-            <div>
-                <h3>Yönetmen</h3>
-                <p>Soner Caner</p>
-            </div>
-
-            <div>
-                <h3>Oyuncular</h3>
-                <p>Karakter kartları</p>
-            </div>
-        </div>
-
-        <div class="modal-story-section">
-            <h3>Hikaye</h3>
-            <p>
-                Cennetin Çocukları, yıllar sonra kasabaya dönen İskender'in geçmişiyle yüzleşmesini ve kendi kimliğini arayışını konu alıyor. Hayatın türlü yüklerini taşıyan karakterlerin yolları, Cennet Ana'nın yuvasında kesişiyor. Aile bağları, aşk, fedakârlık ve hesaplaşmalar arasında her biri kendi sınavını verirken; kasaba sakinleri de karanlık sırların ortaya çıkışıyla sarsılıyor.
-            </p>
-            <p>
-                Sevgiyle kurulan bağların, ihanetle sınandığı bu hikâyede; her karakter yeni bir başlangıç umudunun peşinde...
-            </p>
-        </div>
-    </div>
 
     <!-- About Section -->
     <section id="about" class="about-section">
@@ -377,22 +268,22 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <h4>İletişim</h4>
-                    <p>info@mottoproductions.com</p>
-                    <p>+90 212 000 00 00</p>
+                    <p>Zühtüpaşa Mahallesi Münir Nurettin Selçuk Cd.<br>No72/2 Kadıköy/İstanbul</p>
+                    <p>0216 414 00 02</p>
                 </div>
                 <div class="col-12 col-md-4">
                     <h4>Bizi Takip Edin</h4>
                     <div class="social-links">
-                        <a href="#">Instagram</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">LinkedIn</a>
+                        <a href="https://x.com/mottoproduksyon" target="_blank">X</a>
+                        <a href="https://www.tiktok.com/@mottoprodksiyon" target="_blank">TikTok</a>
+                        <a href="https://www.facebook.com/mottoproduksiyon" target="_blank">Facebook</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/app.min.js?v=1.0.1"></script>
+    <script src="js/app.min.js?v=1.0.2"></script>
 </body>
 
 </html>
