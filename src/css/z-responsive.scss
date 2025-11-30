@@ -813,4 +813,46 @@
             line-height: 1.2em;
         }
     }
+
+    .players-section {
+        .players-tab-wrapper {
+            flex-direction: column;
+        }
+
+        .players-tab-menu {
+            flex-direction: row;
+            overflow-x: auto;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+
+            li {
+                flex: 0 0 auto;
+                min-width: auto;
+
+                a {
+                    padding: 15px 20px;
+                    white-space: nowrap;
+                    border-left: none;
+                    border-bottom: 3px solid transparent;
+                    font-size: 0.95rem;
+
+                    &:hover {
+                        border-left: none;
+                        border-bottom-color: #d4af37;
+                    }
+                }
+
+                &.active {
+                    a {
+                        border-left: none;
+                        border-bottom-color: #d4af37;
+                    }
+                }
+            }
+        }
+
+        .players-tab-content {
+            width: 100%;
+        }
+    }
 }
